@@ -308,6 +308,16 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/preview_branding.png);">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="https://kcsigurdson.com/branding_projects/" target="_blank">Branding Projects</a></h3>
+            <span>Graphic Design</span>
+          </div>
+        </div>
+      </div>
       <div class="col-md-4">
         <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/preview_web.png);">
           <div class="overlay"></div>
@@ -333,15 +343,6 @@
           <div class="text text-center p-4">
             <h3><a href="https://instagram.com/a/r/?effect_id=729309650808250" target="_blank">My Instagram Effect</a></h3>
             <span>Virtual Reality</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/preview_ind.png);">
-          <div class="overlay"></div>
-          <div class="text text-center p-4">
-            <h3><a href="https://kcsigurdson.com/indesign_projects/" target="_blank">InDesign Projects</a></h3>
-            <span>Adobe InDesign</span>
           </div>
         </div>
       </div>
@@ -415,24 +416,23 @@
 
 <div class="row no-gutters block-9">
   <div class="col-md-6 order-md-last d-flex">
-    <form action="#" class="bg-light p-4 p-md-5 contact-form">
+    <form action="js/action.php" method="post" target="_blank" class="bg-light p-4 p-md-5 contact-form" onsubmit="document.getElementbyID("textbox").value";">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Your Name">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Your Email">
+        <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Subject">
+        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
       </div>
       <div class="form-group">
-        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+        <textarea name="comments" id="comments" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
       </div>
       <div class="form-group">
-        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+        <input type="submit" name="send" value="Send Message" class="btn btn-primary py-3 px-5">
       </div>
     </form>
-
   </div>
 
   <div class="col-md-6 d-flex">
