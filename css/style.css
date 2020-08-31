@@ -40,6 +40,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -3736,8 +3737,10 @@ input[type="button"].btn-block {
   .navbar-expand .navbar-toggler {
     display: none; }
 
+/* mobile maybe */
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9); }
+  color: rgba(0, 0, 0, 0.9);
+}
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: rgba(0, 0, 0, 0.9); }
 
@@ -8208,7 +8211,8 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      /* top mobile band */
+      background: #b4bfba !important;
       position: relative;
       top: 0;
       padding-top: 0;
@@ -8221,8 +8225,8 @@ h1, h2, h3, h4, h5,
     padding: 0; }
   .ftco-navbar-light .navbar-brand {
     color: #000000;
-    padding-top: .7rem;
-    padding-bottom: .7rem; }
+    padding-top: 2rem;
+    padding-bottom: 1.5rem; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
       color: #000000 !important; }
     @media (max-width: 991.98px) {
@@ -8256,7 +8260,7 @@ h1, h2, h3, h4, h5,
         bottom: 0;
         left: 0;
         /*underline link for top bar*/
-        background: #F3B24A;
+        background: #ffda69;
         visibility: visible;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
@@ -8307,7 +8311,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active {
     background: transparent;
     background: none;
-    color: #F3B24A; }
+    color: #ffda69; }
     .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
@@ -8383,7 +8387,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-link {
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #F3B24A !important; }
+        color: #ffda69 !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -8411,7 +8415,7 @@ h1, h2, h3, h4, h5,
     width: 40px;
     height: 40px;
     content: '';
-    background: #FED954;
+    /* background: #FED954; */
     z-index: -1;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -8422,6 +8426,24 @@ h1, h2, h3, h4, h5,
     border-radius: 50%; }
   .navbar-brand span {
     color: #fff; }
+
+
+    .top-logo {
+      position: absolute;
+      top: 50%;
+      left: -12px;
+      width: 70px;
+      height: 70px;
+      content: '';
+      /* background: #FED954; */
+      z-index: -1;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
 
 .hero-wrap {
   width: 100%;
@@ -8438,7 +8460,7 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .1;
     width: 50%;
-    background: #FED954; }
+    background: #b4bfba; }
   .hero-wrap .text {
     width: 100%; }
 
@@ -8461,7 +8483,8 @@ h1, h2, h3, h4, h5,
 .slider-text h2 {
   font-weight: 400; }
   .slider-text h2 span {
-    color: #F3B24A;
+    /* color: #F3B24A; rotate text color text rotate */
+    color: #ffda69;
     font-weight: 700;
   /*text-decoration: underline;*/
  }
@@ -8506,8 +8529,8 @@ h1, h2, h3, h4, h5,
   z-index: 2; }
 
 .mouse-icon {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border: 1px solid transparent;
   cursor: pointer;
   position: relative;
@@ -8516,6 +8539,7 @@ h1, h2, h3, h4, h5,
   display: block; }
   .mouse-icon:after {
     position: absolute;
+    border-radius: 50% !important;
     top: 0;
     left: 0;
     right: 0;
@@ -8523,12 +8547,16 @@ h1, h2, h3, h4, h5,
     content: '';
     background: #edf0ff;
     /* color and opacity of diamond */
-    background-color: #cb9f01;
+    background-color: #ffda69;
     opacity: 50%;
     z-index: -1;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
+
+/* .txt-rotate {
+  text-color: #ffffff;
+} */
 
 .mouse-wheel {
   height: 70px;
@@ -8623,10 +8651,10 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #FED954 ;
-    border: 1px solid #FED954  !important;
+    background: #ffda69 ;
+    border: 1px solid #ffda69  !important;
     color: black  !important; }
-    .btn.btn-primary:hover {
+    font-face-primary:hover {
       border: 1px solid #cb9f01 !important;
       background: #cb9f01 !important;
       color: white !important; }
@@ -8718,7 +8746,7 @@ h1, h2, h3, h4, h5,
     list-style: none;
     margin-bottom: 10px; }
     #navi li a {
-      color: #884A35; }
+      color: #000000; }
       #navi li a.current {
         color: #FED954 ;
         margin-left: 20px;
@@ -8744,7 +8772,7 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 30px;
-    color: #884A35;
+    color: #6e877c;
     opacity: 100%; }
 
 .resume-wrap {
@@ -8755,7 +8783,7 @@ h1, h2, h3, h4, h5,
   .resume-wrap .icon-school {
     width: 50px;
     height: 50px;
-    background: #F3B24A;
+    background: #f8e37f;
     background-image: url(../../images/hat.png);
     background-repeat: no-repeat;
     background-size: 45px 45px;
@@ -8767,7 +8795,7 @@ h1, h2, h3, h4, h5,
     .resume-wrap .icon-work {
       width: 50px;
       height: 50px;
-      background: #F3B24A;
+      background: #f8e37f;
       background-image: url(../../images/work.png);
       background-repeat: no-repeat;
       background-size: 45px 45px;
@@ -9027,7 +9055,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: 0;
-    background: #cb9f01;
+    background: #b4bfba;
     z-index: -1;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -9259,7 +9287,7 @@ textarea.form-control {
   .heading-section h2 {
     font-size: 30px;
     font-weight: 400;
-    color:  #462D33;}
+    color:  #6e877c;}
     .heading-section h2 span {
       font-weight: 400; }
     @media (max-width: 767.98px) {
